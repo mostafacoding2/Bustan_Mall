@@ -99,7 +99,10 @@ class ProductsBody extends StatelessWidget {
                           },
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 3, childAspectRatio: 0.604),
+                                crossAxisCount: 2,
+                                childAspectRatio: 0.9,
+                                mainAxisSpacing: 4,
+                                crossAxisSpacing: 4,),
                         );
                 },
               ),

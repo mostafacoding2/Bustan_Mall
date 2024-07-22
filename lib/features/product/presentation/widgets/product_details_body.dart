@@ -370,7 +370,7 @@ class _ProductDetailsBodyState extends State<ProductDetailsBody> {
                   padding: const EdgeInsets.only(left: 8, right: 8),
                   child: Text(
                     " description:  ${widget.data.descrip!}",
-                    maxLines: 12,
+                    maxLines: 5,
                     textAlign: TextAlign.start,
                     style: lightTheme.textTheme.labelMedium!.apply(
                       overflow: TextOverflow.ellipsis,

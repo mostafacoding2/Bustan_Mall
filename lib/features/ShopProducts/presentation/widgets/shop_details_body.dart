@@ -47,13 +47,12 @@ class ShopDetailsBody extends StatelessWidget {
                           builder: (BuildContext context) {return ItemDeleteShop(
                             id: shopsModel!.id!,
                             title:
-                            "Do you want to delete product ?",
+                            "Do you want to delete shop ?",
                           );
                           });
                     } else if (choice == 'Update') {
                       navigateTo(
                         context,
-
                         UpdateShopScreen(
                           name: shopsModel!.name!,
                           theDoorNumber: shopsModel!.theDoorNumber!,
@@ -116,8 +115,7 @@ class ShopDetailsBody extends StatelessWidget {
                       )
                     ];
                   }),
-              isShowed: role == AppString.admin ||
-                  role == AppString.seller
+              isShowed: role == AppString.admin
                   ? true
                   : false,
               title: "Shop Details",
