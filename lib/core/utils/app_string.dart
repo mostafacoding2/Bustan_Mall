@@ -16,7 +16,7 @@ class AppString {
   static const haveAncount = 'Now you have an account';
   static const ecommerceApp = 'ECommerceApp';
   static const BUSTAN = 'بستان';
-  static const bUSTAN = 'T e c h n o l o g y';
+  static const bUSTAN = 'B U S T A N';
   static const MALL = 'مول';
   static const mall = 'M a l l';
   static const street = 'Street';

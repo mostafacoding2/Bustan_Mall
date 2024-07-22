@@ -209,30 +209,30 @@ class _RegisterBodyState extends State<RegisterBody> {
                       flutterToast(message: state.failure, success: false);
                     }
                     if (state is RegisterSuccessState) {
-                      print(state.registerModel.roles);
-                      PreferenceUtils.setString(SharedKeys.userName,widget.usernameController.text );
-                      userName = widget.usernameController.text;
+                      // print(state.registerModel.roles);
+                      // PreferenceUtils.setString(SharedKeys.userName,widget.usernameController.text );
+                      // userName = widget.usernameController.text;
                       flutterToast(
                           message: "An account has been created successfully",
                           success: true);
-                      Data.createCustomer(
-                          name: widget.usernameController.text);
-                      if (state.registerModel.roles!.length == 1) {
-                        PreferenceUtils.setString(SharedKeys.role, "User");
-                        role = "User";
-                      }
-                      final Widget widgetScreen;
-                      (state.registerModel.roles!.length == 1)
-                          ? widgetScreen = BottomNavScreen(
-                              currentIndex: 0,
-                            )
-                          : widgetScreen = SelectRole(
-                              roles: state.registerModel.roles,
-                            );
-                      navigateAndReplacement(context, widgetScreen);
-                      // navigateTo(context, const HomeScreen());
-                    }
-                    // navigateTo(context, const HomeScreen());
+                    //   Data.createCustomer(
+                    //       name: widget.usernameController.text);
+                    //   if (state.registerModel.roles!.length == 1) {
+                    //     PreferenceUtils.setString(SharedKeys.role, "User");
+                    //     role = "User";
+                    //   }
+                    //   final Widget widgetScreen;
+                    //   (state.registerModel.roles!.length == 1)
+                    //       ? widgetScreen = BottomNavScreen(
+                    //           currentIndex: 0,
+                    //         )
+                    //       : widgetScreen = SelectRole(
+                    //           roles: state.registerModel.roles,
+                    //         );
+                    //   navigateAndReplacement(context, widgetScreen);
+                    //   // navigateTo(context, const HomeScreen());
+                    // }
+                    navigateTo(context, const LoginScreen());}
 
                     // TODO: implement listener
                   },
